@@ -1,7 +1,8 @@
 # OpenAI API Interaction Script
 
-This script is a command-line tool written in Zsh that interacts with the OpenAI API using the GPT-3.5 Turbo model to generate responses for given requests. It maintains a history of previous requests and responses, and provides options for controlling the output format and behavior.
-    
+This script is a command-line tool written in Zsh that interacts with the OpenAI API using the GPT-3.5 Turbo model to generate responses for given requests. It maintains a history
+of previous requests and responses, and provides options for controlling the output format and behavior.
+
 Written with the help of chat GPT-3.5 (even the readme.md :))
 
 ## Requirements
@@ -12,9 +13,9 @@ Written with the help of chat GPT-3.5 (even the readme.md :))
 
 ## Usage
 
-\```bash
+```bash 
 ./script_name.sh [-d] [-r] [-c] "Your request"
-\```
+```
 
 ### Options
 
@@ -26,27 +27,27 @@ Written with the help of chat GPT-3.5 (even the readme.md :))
 
 1. To get a response for a request:
 
-\```bash
-./script_name.sh "What is the capital of France?"
-\```
+```bash
+./gpt.sh "What is the capital of France?"
+```
 
 2. To get a response containing only code (if any) and save it to a Python file:
 
-\```bash
-./script_name.sh -d "How to reverse a list in Python?" > reverse_list.py
-\```
+```bash
+./gpt.sh -d "How to reverse a list in Python?" > reverse_list.py
+```
 
 3. To get the raw response from the API:
 
-\```bash
-./script_name.sh -r "What is the capital of France?"
-\```
+```bash
+./gpt.sh -r "What is the capital of France?"
+```
 
 4. To clear the history file:
 
-\```bash
-./script_name.sh -c "What is the capital of France?"
-\```
+```bash
+./gpt.sh -c
+```
 
 ## Environment Variables
 
