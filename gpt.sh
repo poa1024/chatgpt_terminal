@@ -31,7 +31,9 @@ while getopts 'd:r:c' arg; do
 done
 
 # Truncate history
-sh truncate.sh "$TMPDIR/history.txt" $HISTORY_SIZE
+if test -e "$TMPDIR/history.txt"; then
+  sh truncate.sh "$TMPDIR/history.txt" $HISTORY_SIZE
+fi
 
 # Add request to history
 REQ="$1"
