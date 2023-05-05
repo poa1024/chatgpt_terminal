@@ -6,7 +6,7 @@ API_KEY=$OPEN_AI_API_KEY
 CODE_ONLY=false
 RAW=false
 HISTORY_SIZE=1000
-GPT_VERSION='gpt-3.5-turbo'
+GPT_VERSION='gpt-4'
 
 # Parse command-line options
 while getopts 'd:r:c' arg; do
